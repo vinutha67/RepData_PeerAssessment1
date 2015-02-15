@@ -99,7 +99,8 @@ hist(aggdata_steps_by_date$x,main= &quot; Frequency of Total number of steps tak
 </div>
 <div id="are-there-differences-in-activity-patterns-between-weekdays-and-weekends" class="section level2">
 <h2>Are there differences in activity patterns between weekdays and weekends?</h2>
-<p>data[,“weekday”] &lt;- NA data<span class="math">\(weekday &lt;- weekdays(as.Date(data\)</span>date))</p>
+<pre class="r"><code>data[,&quot;weekday&quot;] &lt;- NA
+data$weekday &lt;- weekdays(as.Date(data$date))</code></pre>
 </div>
 
 

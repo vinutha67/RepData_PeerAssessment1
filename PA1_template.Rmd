@@ -46,5 +46,7 @@ print(median(aggdata_steps_by_date$x))
 ```
 
 ## Are there differences in activity patterns between weekdays and weekends?
+```{r}
 data[,"weekday"] <- NA
 data$weekday <- weekdays(as.Date(data$date))
+```
